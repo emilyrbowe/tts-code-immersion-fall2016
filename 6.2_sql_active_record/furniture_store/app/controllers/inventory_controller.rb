@@ -8,6 +8,6 @@ class InventoryController < ApplicationController
   end
 
   def by_category
-    @products = Product.find_by_category(params[:category])
+    @products = Product.all
   end
 end
